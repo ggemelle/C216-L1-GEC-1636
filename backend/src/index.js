@@ -35,7 +35,7 @@ server.post('/api/v1/professor/inserir', async (req, res, next) => {
 
     try {
         const result = await pool.query(
-          'INSERT INTO professor (nome, disciplina, email) VALUES ($1, $2, $3) RETURNING *',
+          'INSERT INTO professores (nome, disciplina, email) VALUES ($1, $2, $3) RETURNING *',
           [nome, disciplina, email]
         );
         res.send(201, result.rows[0]);
