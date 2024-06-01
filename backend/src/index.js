@@ -12,7 +12,7 @@ const pool = new Pool({
 
 // iniciar o servidor
 var server = restify.createServer({
-    name: 'pratica-4',
+    name: 'pratica-6',
 });
 
 // Iniciando o banco de dados
